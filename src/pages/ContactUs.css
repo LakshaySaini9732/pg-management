@@ -1,0 +1,14 @@
+.contact-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}

@@ -1,0 +1,14 @@
+.weather-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #f7faff;
+  border-radius: 10px;
+}
+
+.weather-box img {
+  width: 80px;
+  height: 80px;
+}
