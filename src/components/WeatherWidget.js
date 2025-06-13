@@ -5,8 +5,8 @@ const Weather = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const apiKey = '723b70bd6204da132d5b36b3e6396410';
-    const city = "Dharamsala";
+    const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
+    const city = process.env.REACT_APP_CITY;
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
       .then((response) => {
