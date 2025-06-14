@@ -43,7 +43,7 @@
 }
 
 .navbar-links a:hover {
-  color: #aad4ff;
+  color:black;
 }
 
 .hamburger {
@@ -90,7 +90,7 @@
 }
 
 .login-button:hover {
-  background-color: white;
+  /* background-color: white; */
   color: black;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .register-button:hover {
-  background-color: #aad4ff;
+  /* background-color: #aad4ff; */
   color: black;
 }
 /* Mobile styles */
