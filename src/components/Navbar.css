@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:black;
+  background-color:lightblue;
   color: white;
   padding: 10px 30px;
   font-size: large;
@@ -73,10 +73,46 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
+.nav-button {
+  padding: 6px 14px;
+  /* border-radius: 6px; */
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+  /* border: 1px solid white; */
+}
+
+/* Login button: transparent with border */
+.login-button {
+  /* background-color: transparent; */
+  color: white;
+}
+
+.login-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Register button: white filled */
+.register-button {
+
+  color: black;
+}
+
+.register-button:hover {
+  background-color: #aad4ff;
+  color: black;
+}
 /* Mobile styles */
 @media (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
+  }
+  .nav-button {
+    margin: 10px 0;
+    width: 60%;
+    text-align: center;
   }
   
   .hamburger {

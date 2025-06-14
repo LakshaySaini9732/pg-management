@@ -7,7 +7,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  // Close menu when route changes
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
@@ -22,14 +21,16 @@ const Navbar = () => {
         <img src={logo} alt="CozyWay Logo" className="logo" />
         <h1 className="brand-name">CozyWay PG</h1>
       </div>
-      
+
       <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
         <Link to="/">Home</Link>
         <Link to="/gallery">Gallery</Link>
         <Link to="/rooms">Rooms</Link>
         <Link to="/contact">Contact</Link>
+        <Link to="/login" className="nav-button login-button">Login</Link>
+        <Link to="/register" className="nav-button register-button">Register</Link>
       </div>
-      
+
       <div className="hamburger" onClick={toggleMenu}>
         <span className={`line ${isOpen ? 'line1' : ''}`}></span>
         <span className={`line ${isOpen ? 'line2' : ''}`}></span>
